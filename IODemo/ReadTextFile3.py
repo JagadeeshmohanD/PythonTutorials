@@ -1,9 +1,10 @@
-try:
-    f=open("Demo.txt")
+import os
+# filepath=os.getcwd()
+# fz=os.path.dirname(filepath)
+# print(fz)
+with open(os.path.dirname(os.getcwd())+"\\DemoNew.txt") as f:
+    print("Current state is",f.closed)
     data=f.read()
     print(data)
-except Exception as err:
-    print("Exception is",err)
-finally:
-    f.close()
-    
+
+print("Sate of the file is ",f.closed)

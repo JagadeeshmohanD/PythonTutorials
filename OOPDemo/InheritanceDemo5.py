@@ -1,6 +1,6 @@
 class BaseClass:
     def hello_world(self):
-        print("Hello Python")
+        print("Hello Python from Base")
         
     def bye(self):
         print("Bye from python")

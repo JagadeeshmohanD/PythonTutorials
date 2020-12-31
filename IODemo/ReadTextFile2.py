@@ -1,10 +1,8 @@
-f=open("Demo.txt")
-data=f.read()
-print(f.name)
-print(f.mode)
-print(f.closed)
-# print(data)
-f.close()
-print(f.closed)
-# datanew=f.read()
-# print(datanew)
+try:
+    f=open("Demo.txt")
+    data=f.read()
+    print(data)
+except Exception as err:
+    print("Exception is",err)
+finally:
+    f.close()

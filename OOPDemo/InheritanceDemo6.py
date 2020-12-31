@@ -1,18 +1,23 @@
-class BaseClass:
-    def hello_world(self):
-        print("Hello Python from Base")
-        
-    def bye(self):
-        print("Bye from python")
+class A:
+    def __init__(self):
+        print("I am in Class A")
 
-class ChildClass(BaseClass):
-    def hello_world(self):
-        super().hello_world()
-        super().bye()
-        # BaseClass.hello_world(self)
-        print("Hello Python from child")
+class B(A):
+    def __init__(self):
+        super().__init__()
+        # A.__init__(self)
+        print("I am in class B")
 
-obj1=ChildClass()
-obj1.hello_world()
+class c(B):
+    def __init__(self):
+        super().__init__()
+        # A.__init__(self)
+        # B.__init__(self)
+        print("I am in class C")
+
+obj1=c()
+
+
+
 
 
