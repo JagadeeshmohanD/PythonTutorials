@@ -20,7 +20,7 @@ def cumsum(list1):
     for i in range(0,len(list1)):
         j+=list1[i]
         new_list.append(j)
-    return new_list[1:]
+    return new_list[:]
 
 #drive code
 m = int(input("enter number of elements for lists"))
@@ -28,5 +28,5 @@ listcu=[]
 for k in range(m):
     list1 = int(input("enter lists values"))
     listcu.append(list1)
-print(list1)
-print("The sum of cumulative list",cumsum(listcu))
+print("The Original given list",listcu)
+print("List The sum of cumulative list",cumsum(listcu))
