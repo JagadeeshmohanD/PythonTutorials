@@ -13,3 +13,8 @@ givenstr = input("Enter string removal")
 print("The given string before removal:"+givenstr)
 new_remove = removei(givenstr)
 print("The string after removal of i th character :"+ new_remove)
+
+###########################################################
+#using str.join()
+new_str1 = ''.join([givenstr[j] for j in range(len(givenstr)) if j!=3])
+print("The sting after removal of i th character :"+new_str1)
