@@ -7,6 +7,7 @@ def run(str1):
     else:
         print("String have special character and not Accepted")
 
+
 #drive code
 if __name__ == '__main__' :
     str1 = input("Enter the string for regex validation")
